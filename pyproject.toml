@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=42"]
+requires = ["setuptools>=42.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -18,7 +18,7 @@ classifiers = [
   "License :: OSI Approved :: GNU Affero General Public License v3",
 ]
 license = {text = "AGPL-3.0 license"}
-authors = [{name = "tplessas", email = "n@n.c"}, {name = "e-panourgia", email = "n@n.c"}]
+authors = [{name = "tplessas", emali = "teopless@gmail.com"}, {name = "e-panourgia"}]
 dependencies = [
     "faker"
 ]
