@@ -18,9 +18,9 @@ class ElGrFloraProviderTest(unittest.TestCase):
 
     def test_plant_name(self):
         """
-        Test for 100 random plant names 
-        - if  characters are greek 
-        - if first character is capital 
+        Test for 100 random plant names
+        - if  characters are greek
+        - if first character is capital
         """
         for _ in range(100):
             output = self.fake.plant_name()
