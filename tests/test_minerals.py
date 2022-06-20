@@ -18,9 +18,9 @@ class ElGrMineralsProviderTest(unittest.TestCase):
 
     def test_gemstone_name(self):
         """
-        Test for 100 random gemstone names 
-        - if  characters are greek 
-        - if first character is capital 
+        Test for 100 random gemstone names
+        - if  characters are greek
+        - if first character is capital
         """
         for _ in range(100):
             output = self.fake.gemstone_name()
