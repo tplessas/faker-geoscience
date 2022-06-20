@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "faker-geoscience"
+dynamic = ["readme"]
+version = "0.1.0"
+description = "Faker addon with providers for everything Earth!"
+keywords = ["faker", "geoscience", "data", "generator", "earth"]
+urls = {homepage = "https://github.com/tplessas/faker-geoscience"}
+classifiers = [
+  "Intended Audience :: Developers",
+  "Programming Language :: Python",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Software Development :: Testing",
+  "Topic :: Utilities",
+  "License :: OSI Approved :: GNU Affero General Public License v3",
+]
+license = {text = "AGPL-3.0 license"}
+authors = [{name = "tplessas", email = "n@n.c"}, {name = "e-panourgia", email = "n@n.c"}]
+dependencies = [
+    "faker"
+]
+requires-python = ">=3.6"
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"]}
+
+[tool.setuptools.packages.find]
+exclude = ["tests"]
