@@ -41,7 +41,8 @@ class Provider(GeographyProvider):
 
     def mountain_name(self) -> str:
         """
-        Return greek mountain name randomly 
+        Return greek mountain name randomly
         example: 'Υμηττός'
         """
         return self.random_element(self.mountain_names)
+        
