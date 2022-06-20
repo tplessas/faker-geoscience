@@ -5,9 +5,7 @@ Fake data generators for everything Earth (and beyond!)
 
 ## Install
 
-```
-pip install faker-geoscience
-```
+    pip install faker-geoscience
 
 ## Use
 
@@ -15,31 +13,26 @@ Base `faker` does not currently support locale resolution for dynamically linked
 locale-specific Provider classes have to be linked explicitly using `Faker.add_provider()`,
 or the containing module has to be passed to the Faker constructor (examples below).
 
-```
-from faker import Faker
-from faker_geoscience import flora
-
-# Example 1: Using Faker.add_provider()
-f = Faker()
-f.add_provider(flora.el_GR.Provider)
-
-# Example 2: Passing to constructor
-f = Faker(locale='el-GR', providers=['flora'])
-
-# Module generators available - may be called
-f.plant_name()
-```
+    from faker import Faker
+    from faker_geoscience import flora
+    
+    # Example 1: Using Faker.add_provider()
+    f = Faker()
+    f.add_provider(flora.el_GR.Provider)
+    
+    # Example 2: Passing to constructor
+    f = Faker(locale='el-GR', providers=['flora'])
+    
+    # Module generators available - may be called
+    f.plant_name()
 
 ## Build
 
-```
-python3 -m build
-```
+    python3 -m build
 
 ## Test
-```
-tox
-```
+
+    tox
 
 ## Contribute
 
